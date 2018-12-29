@@ -1,0 +1,53 @@
+<br>
+<br/>
+<div class="cpl-lg-12">
+  <h2>
+    User Details..
+  </h2>
+  <br/>
+  <button class="btn btn-success"(click)="addUser()" >Add user </button>
+  &nbsp;&nbsp;
+  <button class="btn btn-danger"(click)="logOutUser()" >LogOff</button>
+  <br/>
+  <br/>
+  <table class="table table-striped
+                 table-responsive table-hover">
+                <thead>
+                  <th class="text-hide">Id</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Action</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of users">
+                    <td class="text-hide">{{user.id}}</td>
+                    <td>{{user.firstname | uppercase }}</td>
+                    <td>{{user.lastname |uppercase }}</td>
+                    <td>{{user.email | lowercase}}</td>
+                 <td>
+                   <button class="btn btn-danger"
+                   (click)="deleteUser(user)">Delete
+                  </button>
+                  &nbsp;&nbsp;
+
+                  <button class="btn btn-danger"
+                   (click)="editUser(user)">Edit
+                  </button>
+
+                 </td>
+                    
+                  </tr>
+                  <tr *ngIf="!users||users.length==0">
+                    <th colspan="5">
+                    <p class="text-right text-danger">
+                      Sorry No users available
+                    </p>
+                  </th>
+                  </tr>
+
+                
+
+                </tbody>
+                </table>
+</div>

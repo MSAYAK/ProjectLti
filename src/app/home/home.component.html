@@ -1,0 +1,35 @@
+<br/>
+<div class="col-md-9 col-md-offset-2">
+  <h3 style="font-weight: bold" >Angular</h3>
+  <br/>
+  <h5>In this we learn about Angular.</h5>
+  <ul class="text-success" style="font-weight: bold">
+  <li>
+  ANGULAR ARCHITECTURE
+  <ul>
+<li>Modules</li>
+<li>Directives</li>
+<li>Root Component or App Componenet</li>
+<li>Services and Dependency Injection</li>
+<li>Pipes</li>
+<li>Modelst</li>
+<li>Routing</li>
+</ul>
+</li>
+</ul>
+</div>
+<a class="text-right" [routerLink]="['/login']"><h3>Login..</h3></a>
+  <a class="text-right" [routerLink]="['/calculator']"><h3>Calculator</h3></a>
+  <a class="text-right" [routerLink]="['/twoway']"><h3>Two way data binding</h3></a>
+  <a class="text-right" [routerLink]="['/lifecycle']"><h3>LifeCycle</h3></a>
+  <hr/>
+
+<h3 Changetext></h3>
+<h5 class="text-right"> {{todaysDate |date: 'dd/M/yy'}} {{todaysDate|date:'shortTime'}}</h5>
+
+<b>Months: {{months | slice:2:6}}</b><br>
+Square root of 9 is:{{9|sqrt}}
+
+
+
+

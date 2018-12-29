@@ -1,0 +1,12 @@
+<div>
+  <h2>
+    One way  data binding
+  </h2>
+  <form class="form-horizontal">
+    <input type="text" 
+    [ngModelOptions]="{standalone:true}"
+  [(ngModel)]="firstname"/>
+  <br/>
+  {{firstname}}
+  </form>
+</div>

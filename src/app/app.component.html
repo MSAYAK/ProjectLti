@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title |uppercase}}!
+  </h1>
+ </div>
+Type your name Here: <input type="text" #txtName (keyup)="0"
+placeholder="Type here"/>
+
+Your Name is{{txtName.value}} -->
+<div style="color:white;background-color:purple; padding:10px">
+  <h2 class="text-center" style="margin-top: 20px">
+  LTI User Management app..!
+  </h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-2">
+    <br>
+      <img src="../assets/images/user-management.jpg" alt="OOPS!!">
+    </div>
+  </div>
+<br><br>
+<div class="col-md-offset-5">
+    <footer>
+      <span class="text-danger">
+        <strong>
+          This site is copyright &copy;to LTI!!</strong>
+          <br><strong>
+          All rights reserved here.
+        </strong>
+      </span>
+    </footer>
+  </div>
+</div>
+
+

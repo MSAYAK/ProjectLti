@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Amit",
+      "lastname": "Sawant",
+      "email": "Amit@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Anand",
+      "lastname": "Mitra",
+      "email": "Anand@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Sayak",
+      "lastname": "Mitra",
+      "email": "Sayak@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstname": "Jose",
+      "lastname": "Mourinho",
+      "email": "josemo@gmai.com"
+    },
+    {
+      "id": 5,
+      "firstname": "Andy",
+      "lastname": "Carrol",
+      "email": "Carrol@gmail.com"
+    }
+  ]
+}
